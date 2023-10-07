@@ -46,7 +46,8 @@ function game() {
         do {
             var userChoice = prompt("Do you choose rock, paper or scissors? Write the option in the space below");
             var correctChoice = false;
-            var playerSelection = userChoice.toLowerCase().toString();
+            //var playerSelection = userChoice.toLowerCase();
+            var playerSelection = userChoice;
             if (playerSelection == "rock" || playerSelection == "paper" || playerSelection == "scissors") {
                 correctChoice = true;
             } else {
