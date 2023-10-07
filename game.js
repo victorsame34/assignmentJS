@@ -1,4 +1,5 @@
-var userChoice = "";
+const case = null;
+var userChoice = case || '';
 function playRound(playerSelection, computerSelection) {
     if(playerSelection === computerSelection) {
         return "The result is a tie!";
