@@ -1,3 +1,4 @@
+var userChoice = "";
 function playRound(playerSelection, computerSelection) {
     if(playerSelection === computerSelection) {
         return "The result is a tie!";
@@ -44,7 +45,7 @@ function computerPlay() {
 function game() {
     for (let i = 0; i < 5; i++) {
         do {
-            var userChoice = prompt("Do you choose rock, paper or scissors? Write the option in the space below");
+            userChoice = prompt("Do you choose rock, paper or scissors? Write the option in the space below");
             var correctChoice = false;
             var playerSelection = userChoice.toLowerCase();
             if (playerSelection == "rock" || playerSelection == "paper" || playerSelection == "scissors") {
